@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(Assets/Norse-Bold.otf) format('opentype');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel {
+    flex: 1;
+    position: relative;
+    background-color: #000;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.logo-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    color: white;
+    height: 25%;
+    z-index: 1;
+}
+
+.logo-container h1 {
+    font-family: 'Norse-Bold', sans-serif;
+    font-size: 48px;
+    letter-spacing: 5px;
+}
+
+.odin-lined {
+    height: 50%;
+}
+
+.right-panel {
+    flex: 1.5;
+    background-color: #fff;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.header strong {
+    color: green;
+}
+
+.header em {
+    font-style: italic;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:invalid:focus {
+    border: 1px solid red;
+}
+
+.input-group input:focus {
+    border: 1px solid blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+    outline: none;
+}
+
+.create-account-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #556b2f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.create-account-btn:hover {
+    background-color: #6b8e23;
+}
+
+.login-link {
+    text-align: center;
+}
+
+.login-link a {
+    color: green;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
